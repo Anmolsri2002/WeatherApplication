@@ -39,8 +39,72 @@ select option {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-
-
 #forecast div:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 640px) {
+
+  body {
+    padding: 8px;
+  }
+
+  header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  #dateTime {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  section {
+    padding: 14px !important;
+  }
+
+  /* Input + Buttons stack */
+  .flex {
+    flex-direction: column !important;
+  }
+
+  input, select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Current weather card */
+  #currentWeather h2 {
+    font-size: 18px;
+  }
+
+  #currentWeather img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #currentWeather p {
+    font-size: 14px;
+  }
+
+  /* Forecast cards */
+  #forecast {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  #forecast div {
+    padding: 12px;
+  }
+}
+
